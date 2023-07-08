@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {height: 100vh; background: url(./images/bg-desktop.png) no-repeat; background-position: bottom center; background-size: 100% 50%; background-color: hsl(229, 57%, 11%); font-family: 'Raleway', sans-serif; font-size: 14px; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+    .container {width: 900px;  height: 180px; display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;}
+
+    aside, main {background-color: hsl(228, 56%, 26%);}
+    aside {width: 300px; height: 100%; border-radius: 10px 100px 10px 10px; display: flex; flex-direction: column; justify-content: space-evenly ;}
+    aside > * {margin-left: 30px;}
+    .icon-gr > img {background-color: white; padding: 10px; border-radius: 10px; background-color: hsl(229, 57%, 11%); width: 24px; height: 24px;}
+    .icon-gr > img:nth-child(2), img:nth-child(3) {margin-left: 10px;}
+
+    main {width: 450px; height: 50%; align-self: flex-end; border-radius: 10px; padding: 20px; font-size: 12px; word-spacing: 2px;}
+    .byte-left {width: 120px; font-size: 2.5em; font-weight: 700; color: black; background-color:  white;  text-align: center; padding: 10px; border-radius: 10px; float: right; position: relative; top: -50px;}
+    .byte-left:before {content: ""; position: absolute; right: 0%; top: 80%; width: 0; height:0; border-bottom: 36px solid transparent; border-right: 25px solid white; border-left: 11px solid transparent;}
+    .byte-left > span {font-size: 0.2em; color: gray;}
+    .progressive-bar {width: 100%; height: 13px; background-color: hsl(229, 57%, 11%); border-radius: 15px; border: 2px solid hsl(229, 57%, 11%);}
+    .progressive-bar-inner {height: 100%; width: 65%; background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%)); border-radius: 15px; }
+    .pointer {height: 100%; width: 10px; background-color: white; border-radius: 100%; float:right;}
+    
+    .scale {display: flex; justify-content: space-between;}
+
+    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: gray; }
+  </style>
+</head>
+<body>
+  <section class="container">
+
+  <aside>
+    <img src="./images/logo.svg" alt="logo-fylo" width="130px">
+    <div class="icon-gr">
+      <img src="./images/icon-document.svg" alt="icon-doc">
+      <img src="./images/icon-folder.svg" alt="icon-folder">
+      <img src="./images/icon-upload.svg" alt="icon-upload">
+    </div>
+  </aside>
+  <main>
+    <div class="byte-left">185 <span>GB Left</span></div>
+    <p>You’ve used <strong>815 GB</strong> of your storage</p>
+    <div class="progressive-bar">
+      <div class="progressive-bar-inner">
+        <div class="pointer"></div>
+      </div>
+    </div>
+    <p class="scale"><span>0 GB</span><span>1000 GB</span></p>
+  </main>
+  </section>
+
+  
+
+  
+  
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kittiphat Pisuittiporn</a>.
+  </div>
+</body>
+</html>
